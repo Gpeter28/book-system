@@ -1,7 +1,7 @@
 #include "b_system.h"
 
 
-mid()
+mid()                   // put the line in the mid
 {
 	int i;
 	for (i = 0; i < 24; ++i)
@@ -12,7 +12,7 @@ mid()
 
 
 
-home(int a)
+home(int a)      //UI
 {
 	system("cls");
 	char c;
