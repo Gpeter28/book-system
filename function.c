@@ -1,6 +1,6 @@
 #include "b_system.h"
 
-book_save()   //从文件尾部写入文件
+book_save()   // to write the information at the tail of file
 {
 	char c;
 	int len;
@@ -65,7 +65,7 @@ book_save()   //从文件尾部写入文件
 
 
 
-book_scan()   //从用户处得到信息 准备输入
+book_scan()   // get information from user and write it into the file
 {
 	system("cls");
 	line('2');
@@ -224,7 +224,7 @@ book_scan()   //从用户处得到信息 准备输入
 }
 
 // save_into_file
-reader()       //展示已保存的内容
+reader()       //show the store information in the book.txt
 {
 	system("cls");
 	char c;
@@ -271,7 +271,7 @@ reader()       //展示已保存的内容
 }
 
 
-sortwrite()                                 //用于重新写入文件        inf_change   case'4'      readi_in_linklist(全部)
+sortwrite()                                 //rewrite into the file(after del/change information)
 {
 	p2 = p1 = head;
 	char c, b;
@@ -331,7 +331,7 @@ sortwrite()                                 //用于重新写入文件        in
 
 
 
-get_next(SString T,int next[])          //kmp算法实现模糊搜索
+get_next(SString T,int next[])          //use kmp to achieve fuzzy search
 {
 	int i = 1;
 	int j = 0;
