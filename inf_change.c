@@ -1,6 +1,6 @@
 #include "b_system.h"
 
-inf_change()
+inf_change()                    //put the information into the Linklist and change one information each time
 {
 	int num = 0;
 	int i;
@@ -306,7 +306,7 @@ del()
 
 
 
-rewrite(char c)                    // inf_change()修改
+rewrite(char c)                    // rewrite the information after change/del.
 {
 
 	switch (c)
