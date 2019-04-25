@@ -1,6 +1,6 @@
 #include "b_system.h"
 
-find_turn(int turn)
+find_turn(int turn)                               // to find how many match times
 {
 	if (strlen(stu.num) != 13)
 		return(turn);
@@ -15,8 +15,8 @@ find_turn(int turn)
 		return(turn);
 	}
 }
-
-showresult(int turn)
+  
+showresult(int turn)                               
 {
 	char c, found;
 	char msg[100];
@@ -125,7 +125,7 @@ showresult(int turn)
 		}
 }
 
-found_book() //精确搜索
+found_book() //        precise find the book
 {
 	char Found;
 	int turn = 1;
@@ -162,7 +162,7 @@ found_book() //精确搜索
 
 }
 
-kmp_f_book()  //模糊搜索
+kmp_f_book()  //fuzzy search
 {
 	SString T, S;
 	int i, j;
@@ -211,7 +211,7 @@ kmp_f_book()  //模糊搜索
 
 }
 
-found_publisher()
+found_publisher()       
 {
 	char Found;
 	int turn = 1;
@@ -285,7 +285,7 @@ found_isbn()
 }
 
 
-sec()
+sec()                 chose function
 {
 	char c;
 	system("cls");
@@ -306,7 +306,7 @@ sec()
 	
 }
 
-resec(int Sec)																					//接受用户输入的相应查找条件
+resec(int Sec)     rechose function																			//接受用户输入的相应查找条件
 {
 	switch (Sec)
 	{
