@@ -72,6 +72,7 @@ showresult(int turn)
 				system("cls");
 				line('2');
 				line('3');
+				line('1');
 				printf("   ");
 				do																					//循环输出输出数据
 				{
